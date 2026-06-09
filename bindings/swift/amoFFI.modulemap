@@ -1,0 +1,4 @@
+module amoFFI {
+    header "amoFFI.h"
+    export *
+}

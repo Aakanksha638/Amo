@@ -1,0 +1,11 @@
+namespace amo {
+    string greet(string name);
+};
+
+interface AmoStore {
+    constructor();
+    string add_message(string text, string sender);
+    sequence<string> get_messages();
+    string sync_message(string server_url, string text, string sender);
+    string save_to_scylla(string node_url, string text, string sender);
+};
